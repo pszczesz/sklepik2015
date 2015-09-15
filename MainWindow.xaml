@@ -1,0 +1,126 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  
+    x:Class="RuchProstokata1.MainWindow"
+      
+        Title="MainWindow" Height="600" Width="800" MinWidth="750" MinHeight="550" 
+    WindowState="Maximized" ResizeMode="CanResize" SnapsToDevicePixels="False" WindowStartupLocation="CenterScreen" 
+    WindowStyle="SingleBorderWindow" HorizontalAlignment="Center" VerticalAlignment="Center" Closing="Window_Closing">
+    <Window.Resources>
+     
+    </Window.Resources>
+	<Window.Background>
+		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+			<GradientStop Color="#FFB6B6B5" Offset="0"/>
+			<GradientStop Color="#FFB4B4B4" Offset="1"/>
+		</LinearGradientBrush>
+	</Window.Background>
+     <Viewbox Stretch="Uniform" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Left" Background="#FF746F6F">
+               <Label Height="35" Margin="403,6,381,0" x:Name="label1" Background="Azure"  Width="237.194"  Content="SHOP 2011 by Tomex"
+                      BorderThickness="3"
+                      BorderBrush="#FF8F7037" FontWeight="Bold" FontStretch="Normal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" />
+            <Canvas x:Name="canvas1" Width="1080" Height="937" HorizontalAlignment="Left" Focusable="True" MouseLeftButtonDown="canvas1_MouseLeftButtonDown">
+            	<Canvas.Background>
+            		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            			<GradientStop Color="Silver" Offset="0"/>
+            			<GradientStop Color="#FFD0AD7A" Offset="1"/>
+            		</LinearGradientBrush>
+            	</Canvas.Background>
+               
+                <Rectangle x:Name="clientRect" Fill="#FF282B2B" Canvas.Left="422" Canvas.Top="5" 
+                           Width="30" Height="30" Stroke="#FF231919" RadiusX="10" RadiusY="10" 
+                           ToolTip="Klient"></Rectangle>
+                
+                 <!--<Rectangle Canvas.Left="0" Canvas.Bottom="0" Height="46" x:Name="kasa" Stroke="Black" Width="231" RadiusX="4" RadiusY="4"
+                           Fill="#FF4D2626" />        
+                <Rectangle Canvas.Left="444" Canvas.Top="895" Height="41" Name="Exit" Stroke="Black"
+                           Width="138" RadiusX="5" RadiusY="5" Fill="#FF5F5656" />-->
+
+                    <Border BorderBrush="Brown" Canvas.Left="534" Canvas.Top="886" Height="50" BorderThickness="2" CornerRadius="5">
+                        <Image Name="MyExit"   Stretch="Fill"
+                           Width="150" Source="/RuchProstokata1;component/bin/Debug/images/png/wyjscie.png" Height="50" Margin="1" />
+                    </Border>
+                    <Border Canvas.Left="167" Canvas.Top="886" Height="50" BorderBrush="Brown" BorderThickness="2" CornerRadius="5">
+                        <Image  Name="MyKasa"  Stretch="Fill" 
+                            Width="150" Height="50" Margin="1" />
+                    </Border>
+                </Canvas>
+
+           
+        </StackPanel>
+            <StackPanel HorizontalAlignment="Stretch">
+             
+                <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Stretch" CornerRadius="5">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Width="230"
+                                Height="960">
+                    
+                        <Label Margin="5" FontSize="14">Nazwa użytkownika: </Label>
+                    <Label Margin="20,0,0,10" Name="ClientName" FontWeight="Bold" FontSize="16"></Label>
+                    <Label FontSize="18" Margin ="10,10,10,5" Foreground="Brown">Dostępna Kasa:</Label>
+                    <Label Margin="20,0,20,10" Name="ClientCash" Foreground="Black"
+                           Content="{Binding Path=CashString }" FontWeight="Bold" FontSize="24"></Label>
+                    <Label FontSize="18" Margin ="10,10,10,5" Foreground="Brown">Artykuły do kupienia:</Label>
+                        <ItemsControl  Name="ArticleShoping" Margin="5,0,5,10" Padding="15"
+                                   DisplayMemberPath="NamePrice" FontSize="18" 
+                                   Background="PaleGoldenrod" Height="280" Foreground="Brown" Focusable="False">
+                            <ItemsControl.Template>
+                                <ControlTemplate>
+                                    <ScrollViewer x:Name="ScrollViewer" Padding="{TemplateBinding Padding}" 
+                                                  Background="PaleGoldenrod" Foreground="Brown" VerticalScrollBarVisibility="Auto"
+                                                  HorizontalScrollBarVisibility="Auto">
+                                        <ItemsPresenter>
+
+                                        </ItemsPresenter>
+
+                                    </ScrollViewer>
+
+                                </ControlTemplate>
+                            </ItemsControl.Template>
+                        </ItemsControl>
+                        <Label FontSize="18" Margin ="10,20,10,5" Foreground="Brown">Zawartość koszyka:</Label>
+
+                        <ItemsControl  Name="BasketShoping" Margin="5,0,5,10" Padding="5"
+                                    FontSize="18" 
+                                  Height="280" Foreground="Brown" Focusable="False" 
+                                            DataContextChanged="BasketShoping_DataContextChanged" 
+                                            MouseDoubleClick="BasketShoping_MouseDoubleClick" Width="224">
+
+                            <ItemsControl.Template>
+                                <ControlTemplate>
+                                    <ScrollViewer x:Name="ScrollViewer" Padding="{TemplateBinding Padding}" 
+                                                  Background="PaleGoldenrod" Foreground="Brown" VerticalScrollBarVisibility="Auto"
+                                                   HorizontalScrollBarVisibility="Auto">
+                                        <ItemsPresenter>
+                                           
+                                        </ItemsPresenter>
+                                       
+                                    </ScrollViewer>
+                                  
+                                </ControlTemplate>
+                            </ItemsControl.Template>
+                        </ItemsControl>
+
+                        <Label FontSize="18" Margin ="10,10,10,5" Foreground="Brown">Cena towarów w koszyku:</Label>
+                    <Label FontSize="18" Margin ="10,0,10,5" Foreground="Brown" Name="SumCoast"></Label>
+
+
+
+                </StackPanel> </Border>
+            
+            <Expander ExpandDirection="Down" FontSize="16" Header="Funkcje dodatkowe" IsExpanded="False" KeyDown="Expander_KeyDown" Focusable="False">
+                    <StackPanel Orientation="Vertical" >
+                        <Button Margin="5" Focusable="False" Click="Button_Click">przycisk1</Button>
+                        <Button Margin="5" Focusable="False" Click="Button_Click_1">przycisk2</Button>
+                        <Button Margin="5" Focusable="False" Click="Button_Click_2">przycisk3</Button>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+        </StackPanel>
+     </Viewbox>
+      
+ 
+    
+</Window>

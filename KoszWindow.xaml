@@ -1,0 +1,22 @@
+﻿<Window x:Class="RuchProstokata1.KoszWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="KoszWindow" Height="300" Width="300" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <StackPanel>
+        
+            
+      
+        <ListBox Margin="10,10" Name="ArticlesItem" Height="140"
+                 DisplayMemberPath="Name">
+            
+        </ListBox>
+        <StackPanel Orientation="Vertical">
+           <RadioButton Name="rbtnAllArticle" Margin="5,5" Content="Wszystkie artykuły danego typu" IsChecked="True" />
+            <RadioButton Name="rbtnOnlyOne" Margin="5,5" Content="Tylko jeden egzemplarz danego typu"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+            <Button Name="OK" Margin="25,10" Width="80" Click="OK_Click" IsDefault="True">Zatwierdź</Button>
+            <Button Name="CANCEL" Margin="25,10" Width="80" IsCancel="True">Anuluj</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
