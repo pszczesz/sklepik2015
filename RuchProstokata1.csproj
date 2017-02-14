@@ -195,6 +195,8 @@
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="images\png\Kasa.psd" />
+    <None Include="images\Thumbs.db" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -244,6 +246,56 @@
     <Content Include="App_Data\SklepDB.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="images\bulka.png" />
+    <Resource Include="images\chleb.png" />
+    <Resource Include="images\chleb2.png" />
+    <Resource Include="images\cukier.png" />
+    <Resource Include="images\cukierki.png" />
+    <Resource Include="images\czekolada.png" />
+    <Resource Include="images\dziel.png" />
+    <Resource Include="images\herbata.png" />
+    <Resource Include="images\kawa.png" />
+    <Resource Include="images\koszyk.png" />
+    <Resource Include="images\makaron.png" />
+    <Resource Include="images\makaron2.png" />
+    <Resource Include="images\maslo.png" />
+    <Resource Include="images\mleko.png" />
+    <Resource Include="images\png\banany.png" />
+    <Resource Include="images\png\banany2.png" />
+    <Resource Include="images\png\bulka_kajzerka.png" />
+    <Resource Include="images\png\chleb.png" />
+    <Resource Include="images\png\cukier.png" />
+    <Resource Include="images\png\czekolada.png" />
+    <Resource Include="images\png\herbata.png" />
+    <Resource Include="images\png\herbata1.png" />
+    <Resource Include="images\png\jogurt naturalny.png" />
+    <Resource Include="images\png\jogurt truskawkowy.png" />
+    <Resource Include="images\png\Kasa.png" />
+    <Resource Include="images\png\kawa.png" />
+    <Resource Include="images\png\kielbasa.png" />
+    <Resource Include="images\png\makaron.png" />
+    <Resource Include="images\png\maslo.png" />
+    <Resource Include="images\png\mleko.png" />
+    <Resource Include="images\png\noimage.png" />
+    <Resource Include="images\png\papier toaletowy.png" />
+    <Resource Include="images\png\pasata do zebopw.png" />
+    <Resource Include="images\png\pasztet.png" />
+    <Resource Include="images\png\pomarancze.png" />
+    <Resource Include="images\png\ser bialy.png" />
+    <Resource Include="images\png\ser zolty.png" />
+    <Resource Include="images\png\smietana.png" />
+    <Resource Include="images\png\sok jablkowy.png" />
+    <Resource Include="images\png\szczoteczka.png" />
+    <Resource Include="images\png\wedliny.png" />
+    <Resource Include="images\png\woda moineralna.png" />
+    <Resource Include="images\png\wyjscie.png" />
+    <Resource Include="images\png\zelki.png" />
+    <Resource Include="images\png\zmiej zelki.png" />
+    <Resource Include="images\ser_z.png" />
+    <Resource Include="images\smietama.png" />
+    <Resource Include="images\smietana.png" />
+    <Resource Include="images\woda_gaz.png" />
+    <Resource Include="images\woda_gaz2.png" />
     <Content Include="SklepDB.sdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
