@@ -1,0 +1,36 @@
+czekolada wedel		2.69 zl
+paluszki_lajkonik	4.69 zl
+prince polo wafel 	1.25 zl
+smiej zelki owocowe	3.59 zl
+ptasie mleczko 		9.99 zl
+bombonierka merci	29.90 zl
+czekolada mleczna milka	2.89 zl
+baton snickers 		1.49 zl
+chipsy lays solone	6.19 zl
+baton milky way		0.89 zl
+lody algida smietankowe	7.99 zl za 1 litr
+paczek			1.99 zl
+prince polo		0.99 zl
+draze orzechowe m@m	7.39 zl
+budyn truskawkowy	0.79 zl szt
+lody grycan czekoladowe	7.59 zl
+orzeszki ziemne 	9.99 zl
+chrupki peppies bekonowe5.69 zl
+bombonierka toffifee	6.99 zl 
+guma orbit		1.79 zl
+rogal szampanski 	1.39 zl
+baton lion		0.99 zl 
+bombonierka raffaello	10.90 zl
+strucla jablkowa	5.99 zl
+wafel knopers		1.19 zl
+cukierki mentos		2.39 zl
+lody magnu clasic	3.79 zl
+cukierki tic tac	3.79 zl
+ciasto keks		7.49 zl
+ciasto kopiec kreta	7.19 ZL
+galaretka cytrynowa	1.49 zl
+
+
+
+
+
